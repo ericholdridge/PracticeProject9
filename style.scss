@@ -1,0 +1,315 @@
+// Color
+$blu: #1b9ce3;
+$dblu: #0d1128;
+$wht: #fff;
+$blk: #000;
+$gry: rgba(0, 0, 0, 0.7);
+$search: rgba(255, 255, 255, 0.7);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    .container {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+}
+
+// pre nav
+.pre-nav {
+    width: 100%;
+    padding: 20px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .company-logo {
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-weight: 700;
+                color: $blk;
+                letter-spacing: -1px;
+            }
+        }
+        .contact-info {
+            display: flex;
+            .email, .phone {
+                display: flex;
+                align-items: center;
+                margin: 0 70px 0 0;
+                i {
+                    color: $blu;
+                    font-size: 17px;
+                    margin: 0 12px 0 0;
+                }
+                .wrap {
+                    h3 {
+                        margin: 0;
+                        font-size: .9rem;
+                        text-transform: capitalize;
+                    }
+                    span {
+                        display: block;
+                        font-size: .9rem;
+                        color: $gry;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .btn {
+                background: $blu;
+                border: 1px solid $blu;
+                display: flex;
+                align-items: center;
+                border-radius: 22px;
+                transition: .2s ease-in-out;
+                &:hover {
+                    background: none;
+                    a {
+                        color: $blu;
+                    }
+                }
+                a {
+                    padding: 11px 55px;
+                    text-transform: capitalize;
+                    color: $wht;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Navigation
+nav {
+    width: 100%;
+    background: $dblu;
+    padding: 6px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-items {
+            .active {
+                color: $blu;
+            }
+            a {
+                color: $wht;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: .9rem;
+            }
+            &:nth-child(1) a {
+                margin: 0 40px 0 0;
+            }
+        }
+        .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+            input {
+                width: 260px;
+                padding: 20px 0 18px 12px;
+                text-align: left;
+                border-radius: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: none;
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: .9rem;
+                    color: $search;
+                    text-transform: capitalize;
+                }
+                &:focus {
+                    outline: none;
+                    color: $wht;
+                }
+            }
+            i {
+                position: absolute;
+                right: 16px;
+                color: $search;
+
+            }
+        }
+    }
+}
+
+// Hero Section 
+.hero {
+    width: 100%;
+    min-height: 50vh;
+    background: url('images/bg_1.webp') no-repeat center top;
+    background-size: cover;
+    background-image: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $blk;
+        opacity: .3;
+    }
+    .container {
+        position: relative;
+        .hero-content {
+            span {
+                display: block;
+                text-transform: uppercase;
+                font-size: .8rem;
+                color: $wht;
+                font-weight: 600;
+            }
+            h1 {
+                text-transform: capitalize;
+                font-size: 4rem;
+                font-weight: 700;
+                color: $wht;
+                margin: 0;
+                line-height: 1;
+            }
+            .btn {
+                background: $blu;
+                display: inline-block;
+                padding: 14px 20px;
+                margin: 40px 0 0 0;
+                border-radius: 24px;
+                cursor: pointer;
+                a {
+                    color: $wht;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Features section 
+.features {
+    width: 100%;
+    padding: 100px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .card-left {
+            width: 100%;
+            max-width: 600px;
+            .info {
+                h3 {
+                    margin: 0 0 25px 0;
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                }
+                p {
+                    color: #848484;
+                    margin: 0 0 26px 0;
+                    line-height: 1.8;
+                }
+            }
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .box {
+                    width: 100%;
+                    max-width: 284px;
+                    padding: 28px 14px 18px 14px;
+                    text-align: center;
+                    background: #f0f9fd;
+                    margin: 20px 0 0  0;
+                    transition: .2s ease-in-out;
+                    position: relative;
+                    &:hover {
+                        background: $blu;
+                        color: $wht;
+                        i {
+                            color: $wht;
+                        }
+                    }
+                    &:nth-child(1) {
+                        background: $blu;
+                        color: $wht !important;
+                        i {
+                            color: $wht;
+                        }
+                    }
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 50px 50px 0;
+                        border-color: transparent #fff transparent transparent;
+                    }
+                    i {
+                        font-size: 3rem;
+                        color: $blu;
+                    }
+                    h3 {
+                        margin: 8px 0;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+        .card-right {
+            width: 100%;
+            max-width: 470px;
+            border: 4px solid #d1ebf9;
+            .img {
+                width: 420px;
+                margin: 0 auto;
+                padding: 20px 0 0 0;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.3rem;
+                margin: 16px 0 0 20px;
+            }
+            p {
+                margin: 14px 10px 0 20px;
+                line-height: 1.8;
+                color:  #848484;
+            }
+            .btn {
+                background: $blu;
+                display: inline-block;
+                margin: 16px 0 0 20px;
+                padding: 20px 30px;
+                border-radius: 28px;
+                a {
+                    color: $wht;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

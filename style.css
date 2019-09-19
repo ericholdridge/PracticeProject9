@@ -1,0 +1,404 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.pre-nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.pre-nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-nav .container .company-logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.pre-nav .container .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pre-nav .container .contact-info .email, .pre-nav .container .contact-info .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 70px 0 0;
+}
+
+.pre-nav .container .contact-info .email i, .pre-nav .container .contact-info .phone i {
+  color: #1b9ce3;
+  font-size: 17px;
+  margin: 0 12px 0 0;
+}
+
+.pre-nav .container .contact-info .email .wrap h3, .pre-nav .container .contact-info .phone .wrap h3 {
+  margin: 0;
+  font-size: .9rem;
+  text-transform: capitalize;
+}
+
+.pre-nav .container .contact-info .email .wrap span, .pre-nav .container .contact-info .phone .wrap span {
+  display: block;
+  font-size: .9rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+}
+
+.pre-nav .container .contact-info .btn {
+  background: #1b9ce3;
+  border: 1px solid #1b9ce3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 22px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.pre-nav .container .contact-info .btn:hover {
+  background: none;
+}
+
+.pre-nav .container .contact-info .btn:hover a {
+  color: #1b9ce3;
+}
+
+.pre-nav .container .contact-info .btn a {
+  padding: 11px 55px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background: #0d1128;
+  padding: 6px 0;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .nav-items .active {
+  color: #1b9ce3;
+}
+
+nav .container .nav-items a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: .9rem;
+}
+
+nav .container .nav-items:nth-child(1) a {
+  margin: 0 40px 0 0;
+}
+
+nav .container .search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .search input {
+  width: 260px;
+  padding: 20px 0 18px 12px;
+  text-align: left;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: none;
+}
+
+nav .container .search input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+}
+
+nav .container .search input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+}
+
+nav .container .search input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+}
+
+nav .container .search input::placeholder {
+  font-weight: 400;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+}
+
+nav .container .search input:focus {
+  outline: none;
+  color: #fff;
+}
+
+nav .container .search i {
+  position: absolute;
+  right: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero {
+  width: 100%;
+  min-height: 50vh;
+  background: url("images/bg_1.webp") no-repeat center top;
+  background-size: cover;
+  background-image: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: .3;
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero .container .hero-content span {
+  display: block;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero .container .hero-content h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero .container .hero-content .btn {
+  background: #1b9ce3;
+  display: inline-block;
+  padding: 14px 20px;
+  margin: 40px 0 0 0;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.hero .container .hero-content .btn a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.features {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features .container .card-left {
+  width: 100%;
+  max-width: 600px;
+}
+
+.features .container .card-left .info h3 {
+  margin: 0 0 25px 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.features .container .card-left .info p {
+  color: #848484;
+  margin: 0 0 26px 0;
+  line-height: 1.8;
+}
+
+.features .container .card-left .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features .container .card-left .wrapper .box {
+  width: 100%;
+  max-width: 284px;
+  padding: 28px 14px 18px 14px;
+  text-align: center;
+  background: #f0f9fd;
+  margin: 20px 0 0  0;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  position: relative;
+}
+
+.features .container .card-left .wrapper .box:hover {
+  background: #1b9ce3;
+  color: #fff;
+}
+
+.features .container .card-left .wrapper .box:hover i {
+  color: #fff;
+}
+
+.features .container .card-left .wrapper .box:nth-child(1) {
+  background: #1b9ce3;
+  color: #fff !important;
+}
+
+.features .container .card-left .wrapper .box:nth-child(1) i {
+  color: #fff;
+}
+
+.features .container .card-left .wrapper .box:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.features .container .card-left .wrapper .box i {
+  font-size: 3rem;
+  color: #1b9ce3;
+}
+
+.features .container .card-left .wrapper .box h3 {
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+
+.features .container .card-left .wrapper .box p {
+  line-height: 1.8;
+}
+
+.features .container .card-right {
+  width: 100%;
+  max-width: 470px;
+  border: 4px solid #d1ebf9;
+}
+
+.features .container .card-right .img {
+  width: 420px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+.features .container .card-right .img img {
+  display: block;
+  width: 100%;
+}
+
+.features .container .card-right h3 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin: 16px 0 0 20px;
+}
+
+.features .container .card-right p {
+  margin: 14px 10px 0 20px;
+  line-height: 1.8;
+  color: #848484;
+}
+
+.features .container .card-right .btn {
+  background: #1b9ce3;
+  display: inline-block;
+  margin: 16px 0 0 20px;
+  padding: 20px 30px;
+  border-radius: 28px;
+}
+
+.features .container .card-right .btn a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=style.css.map */
